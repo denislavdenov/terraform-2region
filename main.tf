@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_instance" "web_west" {
   provider = aws.west
-  ami           = "ami-0230ee9fd9ee23718"
+  ami           = "ami-06d51e91cea0dac8d"
   instance_type = "t2.micro"
 
   tags = {
@@ -23,8 +23,7 @@ resource "aws_instance" "web_west" {
 }
 
 resource "aws_instance" "web_east" {
-  provider = aws.west
-  ami           = "ami-0230ee9fd9ee23718"
+  ami           = "ami-04b9e92b5572fa0d1"
   instance_type = "t2.micro"
 
   tags = {
